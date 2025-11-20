@@ -1,0 +1,31 @@
+
+
+
+
+/* navbar section */
+
+.nav-container {
+    max-width: 1398px !important;
+}
+
+header{
+    position: relative;
+}
+
+.navbar-logo{
+    position: absolute;
+    /* left: 102px; */
+    top: 0;
+    z-index: 2;
+}
+
+
+
+
+
+
+.dd{
+    background-color: black;
+    min-height: 100vh;
+    /* height: 100vh; */
+}
