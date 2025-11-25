@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Beacon One</title>
     <!-- css link -->
     <link rel="stylesheet" href="css/style.css">
     <!-- bootstrap css -->
@@ -19,10 +19,10 @@
         <div class="container nav-container">
            <div class="navbar-logo">
              <a class="navbar-brand" href="index.html">
-                <img src="image/logo.png" alt="">
+               <figure> <img src="image/logo.png" alt=""></figure>
             </a>
            </div>
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -38,14 +38,56 @@
                 </li>
               </ul>
               <div class="nav-btn">
-                <a href="">Contact Us</a>
+                <a class="rounded-pill" href="">Contact Us</a>
               </div>
             </div>
         </div>
     </nav> 
 </header>
 
+<!-- offcanvas -->
 
+<!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button> -->
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <!-- <div class="offcanvas-header"> -->
+    <!-- <h5 id="offcanvasRightLabel">Offcanvas right</h5> -->
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  <!-- </div> -->
+  <div class="offcanvas-body">
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Philosophy</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Asset Classes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us </a>
+      </li>
+    </ul>
+    <div class="nav-btn">
+      <a class="rounded-pill" href="">Contact Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- banner-section -->
+
+<section class="banner-sec">
+  <div class="container">
+    <div class="banner-main-div text-center">
+      <div class="banner-content">
+        <h1>Beacon One Capital <div>Where Vision Meets Opportunity.</div></h1>
+        <p>At Beacon One Capital, we don’t just invest in properties—we transform them. From breathing new life into rundown spaces to building cutting-edge developments, we turn underutilized assets into dynamic centers for business and community growth. We’re not just revitalizing properties—we’re fueling the local economy, creating jobs, and helping communities thrive.</p>
+        <a class="rounded-pill" href="#">Contact us</a>
+        <div class="banner-img">
+          <figure><img src="image/banner-1.png" alt=""></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 

@@ -1,31 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap');
+@import url('../fonts/SangBleu-Sunrise.ttf');
+@import url(../arlite/Arlita.otf);
+/* @import url('../fonts/sangbleu-sans-regular-maisfontes.9ade.zip'); */
 
 
-
-
-/* navbar section */
-
-.nav-container {
-    max-width: 1398px !important;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-header{
+/* @media (min-width:1400px) {
+    .container {
+        max-width: 1530px !important;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px ;
+    }
+} */
+
+.container {
+        max-width: 1530px !important;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px !important;
+}
+
+
+
+:root {
+    --text-color: rgba(113, 113, 117, 1);
+    --btn-color: rgba(170, 106, 170, 1);
+    --primary-color: rgba(255, 255, 255, 1);
+    --black-color: rgba(24, 33, 45, 1);
+
+
+}
+
+a {
+    text-decoration: none !important;
+    display: inline-block;
+}
+
+figure {
+    margin: 0 !important;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< navbar section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.nav-container {
+    max-width: 1428px !important;
+}
+
+header {
     position: relative;
 }
 
-.navbar-logo{
+.navbar-brand {
     position: absolute;
-    /* left: 102px; */
+    width: 224px;
     top: 0;
     z-index: 2;
 }
 
+.navbar-brand img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-link{
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black-color) !important;
+    line-height: 24px;
+    letter-spacing: 0px;
+    padding: 0px 23px !important;
+}
+
+.nav-btn a {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black-color);
+    line-height: 24px;
+    letter-spacing: 0px;
+    padding: 16px 14px;
+    background: #EAE4EA;
+    border: 1px solid #E5DCE5;
+    margin-left: 10px;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler-icon {
+    margin-right: 10px !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< offcanvas >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.offcanvas-body {
+    text-align: center;
+    padding: 2rem 1rem 1rem 1rem !important;
+    background-color: rgba(217, 217, 217, 1);
+    
+}
+
+/* .offcanvas-header {
+    justify-content: end !important;
+}
+
+.offcanvas-header .btn-close {
+    margin-right: 1.1rem !important;
+} */
+
+.btn-close {
+    position: absolute;
+    right: 42px;
+    top: 15px;
+    opacity: 1 !important;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< banner section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.banner-main-div {
+    background-image: url("..//image/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 48px;
+    border-radius: 20px;
+    border: 1px solid rgba(239, 238, 237, 1);
+    overflow: hidden;
+}
+
+.banner-content h1 {
+    max-width: 984px;
+    font-family: "SangBleu-Sunrise";
+    font-size: 54px;
+    font-weight: 400;
+    color: var(--black-color);
+    line-height: 65px;
+    letter-spacing: 0px;
+    margin: 0 auto;
+    padding-bottom: 22px;
+}
+
+.banner-content p {
+    max-width: 817px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 24px;
+    letter-spacing: 0px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.banner-content a {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary-color);
+    line-height: 24px;
+    letter-spacing: 0px;
+    padding: 20px 24px;
+    background: var(--btn-color);
+    margin-bottom: 36px;
+}
+
+.banner-img img {
+    width: 1110px;
+    height: 536px;
+    border-radius: 35px;
+    border: 13px solid rgba(255, 255, 255, 0.2);
+    outline: 2px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    margin-bottom: -14px;
+}
 
 
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< media qurey >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-
-
-.dd{
-    background-color: black;
-    min-height: 100vh;
-    /* height: 100vh; */
+@media (max-width: 1600px) {
+    .navbar-brand {
+        left: 102px;
+    }
+}
+@media (max-width: 1400px) {
+    .navbar-brand {
+        left: 102px;
+    }
+}
+@media (max-width: 1200px) {
+    .navbar-brand {
+        left: 102px;
+    }
+}
+@media (max-width: 992px) {
+    .navbar-brand {
+        left: 102px;
+        width: 200px !important;
+    }
+    .nav-link {
+        line-height: 60px;
+    }
+}
+@media (max-width: 768px) {
+    .navbar-brand {
+        left: 102px;
+    }
+}
+@media (max-width: 576px) {
+    .navbar-brand {
+        left: 45px;
+        width: 150px !important;
+    }
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
 }
